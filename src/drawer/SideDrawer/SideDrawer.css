@@ -1,0 +1,126 @@
+.search-input {
+  /* border: none !important; */
+  border: 2px solid !important;
+  border-image-source: linear-gradient(
+    346.11deg,
+    #212554 0.39%,
+    rgba(81, 90, 180, 0) 76.18%
+  ) !important;
+  width: 449px !important;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(
+    162.34deg,
+    #161a42 22.61%,
+    rgba(22, 26, 66, 0) 118.29%
+  ) !important;
+  padding: 16px 20px !important;
+  color: white !important;
+}
+.search-input ::placeholder {
+  color: #a1a5b6 !important;
+}
+.drawer-bg {
+  /* background-color: red !important; */
+  border: 2px solid #2e357b;
+  border-radius: 16px;
+  border: 2px;
+  background: linear-gradient(
+    162.34deg,
+    #161a42 22.61%,
+    rgba(22, 26, 66, 0) 118.29%
+  );
+  margin-top: 45px;
+  margin-bottom: 44px;
+  height: 100% !important;
+}
+.logout-btn {
+  padding: 120px 0px 62px !important;
+  text-align: center;
+}
+.main-text-font {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-text-font h3 {
+  font-family: Quicksand !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 40px !important;
+  text-align: left;
+  color: #e2e4e9 !important;
+  padding: 44px 0px 31px !important;
+  margin: 0px !important;
+}
+.main-text-font p {
+  color: #5eead4 !important;
+  /* //styleName: sm/Semibold; */
+  font-family: Quicksand !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  text-align: left;
+  padding-top: 44px !important;
+}
+.bid-imges {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 26px;
+}
+.crd-derction {
+  gap: 40px !important;
+  display: flex;
+}
+.image-card {
+  background: transparent !important;
+  /* gap: 40px !important;
+    display: flex; */
+}
+.hotbid-text {
+  font-family: Quicksand !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  text-align: left;
+  color: #a5f3fc !important;
+  padding: 40px 0px 20px;
+  margin-bottom: 0px;
+}
+.title-names {
+  color: #fafafb !important;
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  text-align: left;
+}
+.ether-text {
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  background: linear-gradient(90deg, #acb6e5 0%, #86fde8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.card-body {
+  padding: 15px 0px !important;
+}
+.top-sellers {
+  color: #6ee7b7 !important;
+  font-family: Quicksand !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+  text-align: left;
+  padding: 44px 0px 20px !important;
+  margin: 0px !important;
+}
+.progress-bar {
+    background: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%) !important;
+}
