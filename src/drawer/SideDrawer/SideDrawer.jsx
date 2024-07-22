@@ -168,10 +168,12 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 export default function MiniDrawer() {
+const hoverindex = 1;
+
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
   const [isSubTabClicked, setIsSubTabClicked] = React.useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(hoverindex);
   const [activeTab, setActiveTab] = useState(blocks);
 
   const handleListItemClick = (event, index) => {
@@ -205,9 +207,14 @@ export default function MiniDrawer() {
           <List className="divider-stly">
             {["Inbox", "Starred", "Send email", "Drafts","rating","timing"].map((text, index) => (
               <ListItem
-                key={text}
-                disablePadding
-                sx={{ display: "flex", justifyContent: "center" }}
+              key={index}
+              disablePadding
+              sx={{ display: "block",
+                borderRight:" red"
+               }}
+              selected={selectedItem === index}
+              onClick={(event) => handleListItemClick(event, index)}
+
               >
                 <ListItemButton
                   sx={{
@@ -232,7 +239,6 @@ export default function MiniDrawer() {
                       style={{
                         width: "24px",
                         height: "24px",
-                        margin: "10px",
                       }}
                     />
                     {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
@@ -242,7 +248,7 @@ export default function MiniDrawer() {
               </ListItem>
             ))}
           </List>
-          {/* <Divider  /> */}
+          <Divider  />
           <List className="d-flex justify-content-center align-items-center flex-column">
             {sideevents.map(({ text, Path }, index) => (
               <ListItem key={text} disablePadding sx={{ display: "block" }}>
@@ -337,30 +343,16 @@ export default function MiniDrawer() {
                 <p className="mb-0">Connect Wallet</p>
               </button>
               <p className="pipe">|</p>
-              {/* <Dropdown className="user-id-nfts-dropdown">
-                <Dropdown.Toggle id="dropdown-basic-NFTS"> */}
-                  <img src={profile} />
+                  <img src={profile} className="proflie-img" />
                   <div className="id-proflie">
                     <div>
                     <h3 className="mb-0 text-start">Musfiqur Rahman</h3>
                     <p className="mb-0 text-start">ryzenpixel@gmail.com</p>
                     </div>
                      <div>
-                      <img src={idarrow}/>
+                      <img src={idarrow} className="profile-arrow"/>
                     </div>
                   </div>
-                {/* </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
             </div>
           </Typography>
         </Toolbar>
@@ -388,7 +380,7 @@ export default function MiniDrawer() {
                 <img src={img.src} />
                 <div>
                   <h3 className="mb-0 text-white" key={index}>
-                    {img.name} <img src={verifiedtick} />
+                    {img.name} <img src={verifiedtick}  className="verifiedtick"/>
                   </h3>
                   <p className="mb-0 text-white">{img.price}</p>
                 </div>
@@ -493,7 +485,7 @@ export default function MiniDrawer() {
             </div>
             <div className="recnt-activity-cards-bg1">
               <div>
-                <img src={crdimg2} />
+                <img src={crdimg2} className="crd-lasr-side-profile" />
               </div>
               <div className="varint-btwn-divz">
                 <div className="name-n-id">
@@ -511,7 +503,7 @@ export default function MiniDrawer() {
             </div>
             <div className="recnt-activity-cards-bg">
             <div>
-                <img src={crdimg1} />
+                <img src={crdimg1} className="crd-lasr-side-profile" />
               </div>
               <div className="varint-btwn-divz">
                 <div className="name-n-id">

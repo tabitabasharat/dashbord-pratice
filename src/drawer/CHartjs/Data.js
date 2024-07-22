@@ -28,5 +28,11 @@ export const Data = [
       year:"May",
       userGain: 7.0,
       userLost: 300
-    }
+    },
+    {
+        id: 6,
+        year:"Jun",
+        userGain: 7.0,
+        userLost: 300
+      }
   ];

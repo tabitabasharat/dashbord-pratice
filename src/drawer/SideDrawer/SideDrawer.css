@@ -16,13 +16,15 @@
 }
 .chartjsbar {
   border: 2px solid #495099 !important;
-  width: 320px;
-  height: 184px;
   border-radius: 16px;
   background: #161a42b2 !important;
   display: flex;
-margin-left: 24px;
-
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.crd-lasr-side-profile {
+  width: 64px;
+  height: 64px;
 }
 .list-nav2 {
   content: "";
@@ -54,6 +56,30 @@ margin-left: 24px;
   width: 72px !important;
   margin-left: 32px !important;
 }
+.MuiListItem-root.Mui-selected {
+  background: #232966 !important;
+  width: 68px;
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-right: 2px solid red;
+  /* border: ; */
+}
+.MuiListItem-root.Mui-selected::before{
+  position: absolute;
+  background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%) !important;
+  border-right: 2px solid transparent;
+border-radius: 20px;
+-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+-webkit-mask-composite: destination-out;
+mask-composite: exclude;
+z-index: -1;
+  /* z-index: -1; */
+}
 .logout-btn {
   padding: 120px 0px 62px !important;
   text-align: center;
@@ -65,6 +91,7 @@ margin-left: 24px;
   justify-content: space-between;
   align-items: center;
   width: 1325px !important;
+  padding-bottom: 31px;
 }
 .main-text-font h3 {
   font-family: Quicksand !important;
@@ -73,7 +100,6 @@ margin-left: 24px;
   line-height: 40px !important;
   text-align: left;
   color: #e2e4e9 !important;
-  padding: 0px 0px 31px !important;
   margin: 0px !important;
 }
 .main-text-font p {
@@ -84,6 +110,7 @@ margin-left: 24px;
   font-weight: 700 !important;
   line-height: 20px !important;
   text-align: left;
+  margin: 0px;
   /* padding-top: 44px !important; */
 }
 .bid-imges {
@@ -92,9 +119,8 @@ margin-left: 24px;
   align-items: center;
   gap: 26px;
 }
-.crd-derction {
+.nfts-boxes-divs-stlye {
   gap: 40px !important;
-  display: flex;
 }
 .image-card {
   background: transparent !important;
@@ -138,6 +164,10 @@ margin-left: 24px;
   background-clip: text;
   color: transparent;
 }
+.ether-text img {
+  width: 64px;
+  height: 24px;
+}
 .card-body {
   padding: 15px 0px !important;
 }
@@ -168,13 +198,13 @@ margin-left: 24px;
   width: 136px !important;
 }
 .navbr {
-  padding: 0px 31.2px 44px 0px !important;
+  padding: 0px 0px 46px 0px !important;
   /* display: flex;
   align-items: center; */
 }
 .divider-stly {
-  border-bottom: 2px solid #2e357b;
-  margin: 0px 8px !important;
+  border-bottom: 2px solid #232966;
+  /* margin: 0px 8px !important; */
 }
 .adjustment-of-buttons {
   gap: 45px !important;
@@ -384,7 +414,7 @@ margin-left: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 32px 14px 24px !important;
+  padding: 32px 24px 16px 24px !important;
 }
 .reveenue {
   /* //styleName: xl/Bold; */
@@ -413,6 +443,10 @@ margin-left: 24px;
   content: url("../../assets/sideBoxImages/Chevron.png") !important;
   border: none;
 }
+.verifiedtick {
+  width: 24px !important;
+  height: 24px !important;
+}
 .id-proflie {
   /* padding: 0px 61px 0px 16px !important; */
   display: flex;
@@ -421,10 +455,14 @@ margin-left: 24px;
 }
 .id-proflie h3 {
   font-family: Quicksand;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 22.5px;
   color: #e2e4e9;
+}
+.profile-arrow {
+  width: 24px;
+  height: 24px;
 }
 .id-proflie p {
   font-family: Quicksand;
@@ -482,6 +520,7 @@ margin-left: 24px;
 .progress-bar-stly.progress {
   --bs-progress-bg: #161a42 !important;
   border-radius: 20px !important;
+  margin-top: 16px;
 }
 .progress-bar {
   border-radius: 20px !important;
@@ -523,7 +562,7 @@ margin-left: 24px;
 }
 .side-profile {
   width: 368px !important;
-  height: 1148px !important;
+  height: 1123px !important;
   position: relative;
   border-radius: 16px !important;
   background: linear-gradient(
@@ -553,7 +592,7 @@ margin-left: 24px;
   line-height: 40px;
   text-align: center;
   color: white;
-  padding: 32px 0px 28px;
+  padding-bottom: 28px;
   margin-bottom: 0px;
 }
 .side-profile-bg-img img {
@@ -568,7 +607,7 @@ margin-left: 24px;
   line-height: 32px;
   text-align: center;
   color: white !important;
-  padding: 24px 32px;
+  padding-top: 24px;
   margin: 0pc;
 }
 .price-box {
@@ -583,6 +622,11 @@ margin-left: 24px;
   justify-content: center;
   align-items: center;
   position: relative;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
 }
 .price-box::after {
   position: absolute;
@@ -596,6 +640,11 @@ margin-left: 24px;
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   z-index: -1;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
 }
 .categories {
   /* //styleName: sm/Semibold; */
@@ -606,6 +655,7 @@ margin-left: 24px;
   text-align: center;
   color: white;
   padding: 11px 0px 30px;
+  margin: 0px;
 }
 .info {
   display: flex;
@@ -647,14 +697,17 @@ margin-left: 24px;
   mask-composite: exclude;
   z-index: -1;
 }
-.Balance {
+.Balance h3 {
   /* //styleName: xl/Bold; */
   font-family: Quicksand;
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
   color: white;
+  margin-bottom: 14px;
+}
+.Balance {
   padding: 0px 24px;
 }
 .balance-inner-div {
@@ -666,10 +719,16 @@ margin-left: 24px;
   display: flex;
   justify-content: space-between;
   padding: 16px 24px 16px 16px;
+  align-items: center;
 }
 .ether-num {
   display: flex;
   gap: 11px;
+  align-items: center;
+}
+.ether-num img {
+  width: 32px;
+  height: 32px;
 }
 .add-dropdown {
   gap: 6px;
@@ -688,7 +747,7 @@ margin-left: 24px;
   text-align: center;
   color: white;
   gap: 6px;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
   display: flex;
   align-items: center;
   /* flex-direction: column; */
@@ -701,6 +760,7 @@ margin-left: 24px;
   line-height: 28px;
   text-align: center;
   color: white;
+  margin: 0px;
 }
 .recent-activity-heading {
   display: flex;
@@ -750,11 +810,9 @@ margin-left: 24px;
   height: 88px;
   border-radius: 16px;
   background: #212760;
-  margin-bottom: 13px;
   gap: 12px;
   display: flex;
   padding: 12px;
-  margin-top: 17px;
 }
 .varint-btwn-divz {
   display: flex;
@@ -832,17 +890,21 @@ margin-left: 24px;
 .bid-info {
   width: 100%;
 }
+.proflie-img {
+  width: 56px;
+  height: 56px;
+}
 .search-bar-1::before {
   content: "";
   position: absolute;
   left: 20px; /* Adjust the position of the image */
   top: 50%;
   transform: translateY(-50%);
-  width: 20px; /* Adjust the size of the image */
-  height: 20px;
+  width: 24px; /* Adjust the size of the image */
+  height: 24px;
   background-image: url("../../assets/Nav/Search.png"); /* Path to your image */
   background-size: cover;
-  z-index: 1200;
+  z-index: 1100;
 }
 .search-bar-1 {
   display: flex;
