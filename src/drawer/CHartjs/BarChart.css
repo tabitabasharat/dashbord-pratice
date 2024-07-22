@@ -1,0 +1,28 @@
+canvas {
+    /* border: 1px dotted red; */
+  }
+  
+  .chart-container {
+    position: relative;
+    margin: 0px;
+    height: 20vh;
+    width: 16vw;
+    z-index: 1200;
+    padding: 20px !important;
+    padding-left: 0px !important;
+  }
+  @media (max-width: 1440px)  {
+    .chart-container{
+      width: 43vw;
+    }
+  }
+  @media (max-width: 1288px) {
+    .chart-container{
+      width: 100% !important;
+    }
+   }
+   @media (max-width: 768px) {
+    .chart-container{
+      width: 100% !important;
+    }
+   }
