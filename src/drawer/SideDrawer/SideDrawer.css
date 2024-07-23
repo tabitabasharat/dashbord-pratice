@@ -868,6 +868,9 @@
   text-align: left;
   color: #dbeafe;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .name-n-id p span {
   font-family: Poppins;
@@ -875,7 +878,7 @@
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.02em;
-  text-align: left;
+  /* text-align: left; */
   background: linear-gradient(
     88.82deg,
     #bac1ff -0.98%,

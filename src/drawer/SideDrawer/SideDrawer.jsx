@@ -487,9 +487,7 @@ const hoverindex = 1;
               <div className="varint-btwn-divz">
                 <div className="name-n-id">
                 <h3>Crystal_Art</h3>
-                <p>
-                  by <span>@rudepixxel</span>
-                </p>
+                <p>by <span> @rudepixxel</span></p>
                 </div>
                 <div className="bid-info">
                   <h4>New Bid</h4>
