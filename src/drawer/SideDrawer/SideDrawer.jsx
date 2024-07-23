@@ -148,10 +148,14 @@ const Drawer = styled(MuiDrawer, {
   flexShrink: 0,
   whiteSpace: "nowrap",
   boxSizing: "border-box",
+  overflowY:"hidden",
+
   ...(open && {
     ...openedMixin(theme),
     "& .MuiDrawer-paper": {
       ...openedMixin(theme),
+      overflowY:"hidden"
+
     },
   }),
   ...(!open && {
@@ -159,6 +163,7 @@ const Drawer = styled(MuiDrawer, {
     "& .MuiDrawer-paper": {
       ...closedMixin(theme),
       backgroundColor: "#0B0D21",
+      overflowY:"hidden"
     },
   }),
 }));
@@ -200,6 +205,7 @@ const hoverindex = 1;
     <Box sx={{ display: "flex", width: "100%" }}>
       <Drawer variant="permanent" className="main-drawer">
         <div className="drawer-bg">
+          <div>
           <List className="divider-stly">
             {["Inbox", "Starred", "Send email", "Drafts","rating","timing"].map((text, index) => (
               <ListItem
@@ -245,7 +251,8 @@ const hoverindex = 1;
               </ListItem>
             ))}
           </List>
-          <Divider  />
+          <div className="border-btom-stly"></div>
+          {/* <Divider  /> */}
           <List className="d-flex justify-content-center align-items-center flex-column">
             {sideevents.map(({ text, Path }, index) => (
               <ListItem key={text} disablePadding sx={{ display: "block" }}>
@@ -292,9 +299,12 @@ const hoverindex = 1;
               </ListItem>
             ))}
           </List>
+          </div>
+          <div>
           <List className="d-flex align-items-center justify-content-center">
             <img src={logout} className="logout-btn" />
           </List>
+          </div>
         </div>
       </Drawer>
       {/* <Content/> */}
