@@ -14,7 +14,7 @@ canvas {
   }
   @media (max-width: 1440px)  {
     .chart-container{
-      width: 43vw;
+      width: 22vw;
     }
   }
   @media (max-width: 1288px) {
