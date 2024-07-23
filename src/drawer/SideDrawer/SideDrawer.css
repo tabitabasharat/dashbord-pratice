@@ -40,8 +40,13 @@
   z-index: 1; /* Ensure the pseudo-element is behind the text */
   margin-top: 40px !important;
 }
+.border-btom-stly {
+  width: 56px;
+  margin: 8px;
+  border: 2px;
+  border-bottom: 2px solid #2e357b;
+}
 .drawer-bg {
-  /* background-color: red !important; */
   border: 2px solid #2e357b !important;
   border-radius: 16px !important;
   background: linear-gradient(
@@ -54,6 +59,10 @@
   margin-right: 20px;
   width: 72px !important;
   margin-left: 32px !important;
+  height: 90% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .Mui-selected {
   background: #232966 !important;
@@ -98,7 +107,7 @@
   left: 65px !important;
   right: 0;
   border-radius: 2px;
-  border-top-left-radius: 10px; 
+  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
   padding: 1px;
@@ -110,7 +119,7 @@
   z-index: -1;
 }
 .logout-btn {
-  padding: 120px 0px 62px !important;
+  padding-bottom: 71px !important;
   text-align: center;
   display: flex;
   align-items: end;
@@ -232,7 +241,12 @@
   align-items: center; */
 }
 .divider-stly {
-  border-bottom: 2px solid #232966;
+  /* border-bottom: 2px solid #232966; */
+  gap: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   /* margin: 0px 8px !important; */
 }
 .adjustment-of-buttons {
@@ -591,7 +605,7 @@
 }
 .side-profile {
   width: 368px !important;
-  height: 1108px !important;
+  height: 100% !important;
   position: relative;
   border-radius: 16px !important;
   background: linear-gradient(
@@ -847,7 +861,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 55px;
+  gap: 48px !important;
 }
 .name-n-id h3 {
   font-family: Poppins;
@@ -947,9 +961,9 @@
   position: relative;
   border: 2px solid transparent;
   border-radius: 16px;
-  padding: 16px 0px 16px 71px;
+  padding: 16px 16px 16px 71px;
   z-index: 1;
-  color: #ffff; /* Optional: Set the text color */
+  color: #ffff;
   cursor: pointer;
   width: 449px;
   height: 56px;
@@ -958,12 +972,6 @@
     #161a42 22.61%,
     rgba(22, 26, 66, 0) 118.29%
   );
-}
-.shown {
-  gap: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .search-input::before {
   align-items: center;
@@ -981,7 +989,7 @@
   border: 2px solid transparent;
   background: linear-gradient(
     90deg,
-    #1fa2ff 0%,
+    #39e808 0%,
     #12d8fa 50%,
     #a6ffcb 100%
   ) !important;
@@ -989,4 +997,11 @@
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   z-index: -1;
+}
+
+.shown {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
