@@ -605,7 +605,7 @@
 }
 .side-profile {
   width: 368px !important;
-  height: 1180px !important;
+  height: 100% !important;
   position: relative;
   border-radius: 16px !important;
   background: linear-gradient(
