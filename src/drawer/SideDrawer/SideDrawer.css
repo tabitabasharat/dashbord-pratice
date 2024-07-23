@@ -55,29 +55,59 @@
   width: 72px !important;
   margin-left: 32px !important;
 }
-.MuiListItem-root.Mui-selected {
+.Mui-selected {
   background: #232966 !important;
   width: 68px;
   height: 40px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  border: 2px solid transparent;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  border-right: 2px solid red;
-  /* border: ; */
-}
-.MuiListItem-root.Mui-selected::before{
-  position: absolute;
-  background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%) !important;
   border-right: 2px solid transparent;
-border-radius: 20px;
--webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
--webkit-mask-composite: destination-out;
-mask-composite: exclude;
-z-index: -1;
-  /* z-index: -1; */
+}
+
+.border-color-stly {
+  position: relative;
+  border-right: 2px solid transparent;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 40px;
+  z-index: 1;
+  color: #ffff; /* Optional: Set the text color */
+  cursor: pointer;
+  width: 68px;
+  background: linear-gradient(
+    162.34deg,
+    #161a42 22.61%,
+    rgba(22, 26, 66, 0) 118.29%
+  );
+  display: flex;
+  align-items: center;
+}
+.Mui-selected.border-color-stly::before {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* height: 56px; */
+  /* width: 70px; */
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 65px !important;
+  right: 0;
+  border-radius: 2px;
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px;
+
+  padding: 1px;
+  border-right: 4px solid transparent;
+  background: linear-gradient(90deg, #ec008c 0%, #fc6767 100%) !important;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
 }
 .logout-btn {
   padding: 120px 0px 62px !important;

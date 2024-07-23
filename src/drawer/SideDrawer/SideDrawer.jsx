@@ -205,8 +205,9 @@ const hoverindex = 1;
               <ListItem
               key={index}
               disablePadding
+              className="border-color-stly"
               sx={{ display: "block",
-                borderRight:" red"
+                // borderRight:" red
                }}
               selected={selectedItem === index}
               onClick={(event) => handleListItemClick(event, index)}
