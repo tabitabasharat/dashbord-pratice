@@ -40,12 +40,11 @@
   z-index: 1; /* Ensure the pseudo-element is behind the text */
   margin-top: 40px !important;
 }
-.border-btom-stly{
+.border-btom-stly {
   width: 56px;
   margin: 8px;
-border: 2px 0px 0px 0px;
-opacity: 0px;
-border-bottom: 2px solid #2E357B;
+  border: 2px;
+  border-bottom: 2px solid #2e357b;
 }
 .drawer-bg {
   border: 2px solid #2e357b !important;
@@ -108,7 +107,7 @@ border-bottom: 2px solid #2E357B;
   left: 65px !important;
   right: 0;
   border-radius: 2px;
-  border-top-left-radius: 10px; 
+  border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
   padding: 1px;
@@ -120,7 +119,7 @@ border-bottom: 2px solid #2E357B;
   z-index: -1;
 }
 .logout-btn {
-  padding-bottom:71px !important;
+  padding-bottom: 71px !important;
   text-align: center;
   display: flex;
   align-items: end;
@@ -964,7 +963,7 @@ border-bottom: 2px solid #2E357B;
   border-radius: 16px;
   padding: 16px 16px 16px 71px;
   z-index: 1;
-  color: #ffff; 
+  color: #ffff;
   cursor: pointer;
   width: 449px;
   height: 56px;
