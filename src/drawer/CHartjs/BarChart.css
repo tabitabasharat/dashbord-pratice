@@ -9,6 +9,7 @@ canvas {
     width: 16vw;
     z-index: 1200;
     padding: 20px !important;
+    padding-right: 33px !important;
     padding-left: 0px !important;
   }
   @media (max-width: 1440px)  {
