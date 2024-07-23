@@ -307,7 +307,7 @@ const hoverindex = 1;
           paddingTop: "45px",
           paddingBottom: "79px",
           padding: "0px",
-          paddingRight: "33.93px",
+          // paddingRight: "33.93px",
           
         }}
       >
